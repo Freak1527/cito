@@ -1,0 +1,146 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el cuerpo */
+    justify-content: center; /* Centra horizontalmente los elementos en el cuerpo */
+  }
+  .flor {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+    background-color: #000; /* Fondo negro para toda la página */
+  
+    /* Agrega una animación de pulsación */
+    animation: pulsate 4s infinite;
+    
+  }
+  
+  .texto_superior,
+  .texto_inferior {
+      position: absolute;
+      text-align: center;
+      color: #fff; /* Color del texto */
+      font-size: 25px; /* Tamaño del texto */
+  }
+  
+  .texto_superior {
+      top: -60px; /* Ajusta la posición vertical del texto arriba de la flor */
+  }
+  
+  .texto_inferior {
+      bottom: -60px; /* Ajusta la posición vertical del texto debajo de la flor */
+  }
+  
+  @keyframes pulsate {
+    0% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+  }
+    .centro {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      
+      background: radial-gradient(circle, #000, #ff5e00, #000);
+    
+      z-index: 4;
+    
+      background-size: 4px 4px;
+    
+      filter: drop-shadow(0 0 10px #682600);
+    }
+    
+    .Petalo1 {
+      position: absolute;
+      left: 40px;
+      z-index: 3;
+    
+      width: 120px;
+      height: 30px;
+      border-radius: 50%;
+    
+      background: radial-gradient(circle, #ff5e00, #ffbb00);
+    
+      filter: drop-shadow(0 0 5px #e05200);
+    }
+    
+    .Petalo1.p1 {
+      transform: rotate(22.5deg);
+    }
+    .Petalo1.p2 {
+      transform: rotate(67.5deg);
+    }
+    .Petalo1.p3 {
+      transform: rotate(110.5deg);
+    }
+    .Petalo1.p4 {
+      transform: rotate(157.5deg);
+    }
+    
+    .Petalo2 {
+      position: absolute;
+      left: 0;
+      z-index: 2;
+    
+      width: 200px;
+      height: 40px;
+      border-radius: 50%;
+    
+      background: radial-gradient(circle, #ff5e00, #fbd702);
+    
+      filter: drop-shadow(0 0 5px #e05200);
+    }
+     
+    .Petalo2.p2 {
+      transform: rotate(90deg);
+    }
+    .Petalo2.p3 {
+      transform: rotate(45deg);
+    }
+    
+    .Petalo2.p4 {
+      transform: rotate(135deg);
+    }
+    
+    .Petalo3 {
+      position: absolute;
+      left: 0px;
+      z-index: 1;
+    
+      width: 200px;
+      height: 40px;
+      border-radius: 50%;
+    
+      background: radial-gradient(circle, #ff5e00, #fbd702);
+    
+      filter: drop-shadow(0 0 2px #fbd702);
+    }
+    
+    .Petalo3.p1 {
+      transform: rotate(22.5deg);
+    }
+    .Petalo3.p2 {
+      transform: rotate(67.5deg);
+    }
+    .Petalo3.p3 {
+      transform: rotate(110.5deg);
+    }
+    .Petalo3.p4 {
+      transform: rotate(157.5deg);
+    }
+  
